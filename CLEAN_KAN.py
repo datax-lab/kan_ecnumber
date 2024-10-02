@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from .efficient_kan import KAN  
+from efficient_kan.src.efficient_kan import KAN 
 
 class CLEAN_KAN(nn.Module):
     def __init__(self):
