@@ -1,6 +1,4 @@
-## 1. Install
-
-### 1.1 Requirements
+## 1 Requirements
 
 - Python == 3.9.19
 - PyTorch == 2.2.2+cu118
