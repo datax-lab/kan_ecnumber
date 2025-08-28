@@ -20,7 +20,7 @@ class DeepEC_KAN(nn.Module):
         self.max2 = nn.MaxPool1d(993)
         self.max3 = nn.MaxPool1d(985)
         
-        self.KAN = KAN([384, 512, 229], 3, k=3, device=device)
+        self.KAN = KAN([384, 512, 1938], 3, k=3, device=device)
         if speed : 
             self.KAN.speed()
         
