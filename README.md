@@ -15,7 +15,6 @@ This repository accompanies the paper on **Kolmogorov–Arnold Networks (KANs)**
 ## How to use 
 
 * Prepare protein sequences with EC annotations up to the desired hierarchy level. Deduplicate identical sequences and create train/validation/test splits with homology control when reproducing paper‑style results.
-* Select a backbone (CNN, Transformer, or LLM‑embedding‑based) and its KAN variant to train and evaluate. Report micro‑ and macro‑F1 per EC level (1–4).
 * Use the interpretation utilities to map learned responses back to residues and visualize important regions consistent with known motifs when available.
 
 ## Repository structure
