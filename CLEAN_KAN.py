@@ -6,10 +6,10 @@ class CLEAN_KAN(nn.Module):
     def __init__(self):
         super(LayerNormNet, self).__init__()
 
-        self.fc1 = KAN([1280, 512], grid_size=3, spline_order=3)
+        self.fc1 = KAN([1280, 512], grid_size=10, spline_order=3)
         self.ln1 = nn.LayerNorm(512)
-        self.fc2 = KAN([512, 229], grid_size=3, spline_order=3)
-        self.dropout = nn.Dropout(0.3)
+        self.fc2 = KAN([512, 256], grid_size=10, spline_order=3)
+        self.dropout = nn.Dropout(0.1)
 
     def forward(self, x):
         x = self.dropout(self.ln1(self.fc1(x)))
